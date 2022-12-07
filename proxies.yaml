@@ -1,0 +1,186 @@
+proxies:
+  - name: SG 10
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: ff382d09-becd-41cb-8e4f-3e256b27de47
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-ovh2.v2-ray.com
+    network: ws
+    ws-opts: 
+      path: /fastssh/kigimih/638ee1a146978/
+      headers: 
+        Host: sg-ovh2.v2-ray.com
+    udp: true
+  - name: SG 1
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 790c81e0-7046-11ed-82fa-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sgovh-trojan.bonds.id
+    udp: true
+  - name: SG 2
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 8bf09f60-7046-11ed-aef6-1239d0255272
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: SG 3
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: b55c42f0-7046-11ed-bd8f-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
+  - name: SG 4
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: e9c05510-7046-11ed-812e-1239d0255272
+    skip-cert-verify: true
+    sni: sg8-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg8-trojan.bonds.id
+    udp: true
+  - name: SG 5
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 43a85cb0-7047-11ed-9995-1239d0255272
+    skip-cert-verify: true
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-atha.bonds.id
+    udp: true
+  - name: SG 6
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 6457cfd0-7047-11ed-a0e2-1239d0255272
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg2-trojan.bonds.id
+    udp: true
+  - name: SG 7
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 54827c20-7048-11ed-b194-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
+  - name: SG 8
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: a5031cc0-7048-11ed-86cf-1239d0255272
+    skip-cert-verify: true
+    sni: sg3-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg3-trojan.bonds.id
+    udp: true
+  - name: SG 9
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: c15c29e0-7048-11ed-b7b9-1239d0255272
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg2-trojan.bonds.id
+    udp: true
+  - name: ID 1
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 9fc69d00-7046-11ed-a010-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-ikd.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-ikd.bonds.id
+    udp: true
+  - name: ID 2
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: d1446c90-7046-11ed-b25c-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-herza.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-herza.bonds.id
+    udp: true
+  - name: ID 3
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 56c531c0-7048-11ed-9b61-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-herza.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-herza.bonds.id
+    udp: true
+  - name: ID 4
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 931ae660-7048-11ed-b786-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-herza.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-herza.bonds.id
+    udp: true
