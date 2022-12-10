@@ -1,17 +1,17 @@
 proxies:
-  - name: SG NEW
+  - name: 🆕 SG 10
     server: 172.67.199.34
-    port: 443
+    port: 80
     type: vmess
-    uuid: ff382d09-becd-41cb-8e4f-3e256b27de47
+    uuid: a11d4420-7834-11ed-b535-205c6d5f5d78
     alterId: 0
     cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-ovh2.v2-ray.com
+    tls: false
+    skip-cert-verify: false
+    servername: 
     network: ws
     ws-opts: 
-      path: /fastssh/kigimih/638ee1a146978/
+      path: /fastssh
       headers: 
         Host: sg-ovh2.v2-ray.com
     udp: true
@@ -54,18 +54,21 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: SG 4
+  - name: 🆕 SG 4
     server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: e9c05510-7046-11ed-812e-1239d0255272
-    skip-cert-verify: true
-    sni: sg8-trojan.bonds.id
+    port: 80
+    type: vmess
+    uuid: b2a08ae0-7833-11ed-b530-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
     network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg8-trojan.bonds.id
+    ws-opts: 
+      path: /fastssh
+      headers: 
+        Host: sg1-temp.v2-ray.com
     udp: true
   - name: SG 5
     server: 172.67.199.34
@@ -106,18 +109,21 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: SG 8
+  - name: 🆕 SG 8
     server: 172.67.199.34
     port: 443
-    type: trojan
-    password: a5031cc0-7048-11ed-86cf-1239d0255272
+    type: vmess
+    uuid: 48e9f9a0-7834-11ed-b330-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
+    servername: sg-atha.v2-ray.com
     network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg3-trojan.bonds.id
+    ws-opts: 
+      path: /fastssh
+      headers: 
+        Host: sg-atha.v2-ray.com
     udp: true
   - name: SG 9
     server: 172.67.199.34
