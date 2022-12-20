@@ -1,20 +1,4 @@
 proxies:
-  - name: 🆕 SG 10
-    server: 172.67.199.34
-    port: 80
-    type: vmess
-    uuid: a11d4420-7834-11ed-b535-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /fastssh
-      headers: 
-        Host: sg-ovh2.v2-ray.com
-    udp: true
   - name: SG 1
     server: 172.67.199.34
     port: 443
@@ -28,18 +12,21 @@ proxies:
       headers:
         Host: sgovh-trojan.bonds.id
     udp: true
-  - name: SG 2
+  - name: 🆕 SG 2
     server: 172.67.199.34
     port: 443
-    type: trojan
-    password: 8bf09f60-7046-11ed-aef6-1239d0255272
+    type: vmess
+    uuid: 3aa4d5d0-7ee0-11ed-b832-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
+    servername: sg3-temp.v2-ray.com
     network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg1-trojan.bonds.id
+    ws-opts: 
+      path: /fastssh
+      headers: 
+        Host: sg3-temp.v2-ray.com
     udp: true
   - name: SG 3
     server: 172.67.199.34
@@ -56,19 +43,19 @@ proxies:
     udp: true
   - name: 🆕 SG 4
     server: 172.67.199.34
-    port: 80
+    port: 443
     type: vmess
-    uuid: b2a08ae0-7833-11ed-b530-205c6d5f5d78
+    uuid: 53739c00-7ee0-11ed-b134-205c6d5f5d78
     alterId: 0
     cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
+    tls: true
+    skip-cert-verify: true
+    servername: sg-ovh2.v2-ray.com
     network: ws
     ws-opts: 
       path: /fastssh
       headers: 
-        Host: sg1-temp.v2-ray.com
+        Host: sg-ovh2.v2-ray.com
     udp: true
   - name: SG 5
     server: 172.67.199.34
@@ -109,7 +96,7 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: 🆕 SG 8
+  - name: SG 8
     server: 172.67.199.34
     port: 443
     type: vmess
@@ -189,4 +176,20 @@ proxies:
       path: /howdy
       headers:
         Host: idtj-herza.bonds.id
+    udp: true
+  - name: SG 10
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: a11d4420-7834-11ed-b535-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /fastssh
+      headers: 
+        Host: sg-ovh2.v2-ray.com
     udp: true
