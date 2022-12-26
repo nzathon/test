@@ -1,34 +1,36 @@
 proxies:
-  - name: SG 1
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: 790c81e0-7046-11ed-82fa-1239d0255272
-    skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sgovh-trojan.bonds.id
-    udp: true
-  - name: 🆕 SG 2
+  - name: SGOV1
     server: 172.67.199.34
     port: 443
     type: vmess
-    uuid: 3aa4d5d0-7ee0-11ed-b832-205c6d5f5d78
-    alterId: 0
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg3-temp.v2-ray.com
+    servername: sgv-5.openv2ray.com
     network: ws
     ws-opts: 
-      path: /fastssh
+      path: /opentunnel?user=opentunnel.net-monoll
       headers: 
-        Host: sg3-temp.v2-ray.com
+        Host: sgv-5.openv2ray.com
     udp: true
-  - name: SG 3
+  - name: SGOX2
+    server: 172.67.199.34
+    port: 443
+    type: vless
+    uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgx-3.openv2ray.com
+    network: ws
+    ws-opts: 
+      path: null
+      headers: 
+        Host: sgx-3.openv2ray.com
+    udp: true
+  - name: SGFV1
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -41,23 +43,7 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: 🆕 SG 4
-    server: 172.67.199.34
-    port: 443
-    type: vmess
-    uuid: 53739c00-7ee0-11ed-b134-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-ovh2.v2-ray.com
-    network: ws
-    ws-opts: 
-      path: /fastssh
-      headers: 
-        Host: sg-ovh2.v2-ray.com
-    udp: true
-  - name: SG 5
+  - name: SGFV2
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -70,20 +56,7 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
     udp: true
-  - name: SG 6
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: 6457cfd0-7047-11ed-a0e2-1239d0255272
-    skip-cert-verify: true
-    sni: sg2-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg2-trojan.bonds.id
-    udp: true
-  - name: SG 7
+  - name: SGFV3
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -96,23 +69,7 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: SG 8
-    server: 172.67.199.34
-    port: 443
-    type: vmess
-    uuid: 48e9f9a0-7834-11ed-b330-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-atha.v2-ray.com
-    network: ws
-    ws-opts: 
-      path: /fastssh
-      headers: 
-        Host: sg-atha.v2-ray.com
-    udp: true
-  - name: SG 9
+  - name: SGFV4
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -125,20 +82,7 @@ proxies:
       headers:
         Host: sg2-trojan.bonds.id
     udp: true
-  - name: ID 1
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: 9fc69d00-7046-11ed-a010-1239d0255272
-    skip-cert-verify: true
-    sni: idtj-ikd.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: idtj-ikd.bonds.id
-    udp: true
-  - name: ID 2
+  - name: IDFV1
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -151,7 +95,7 @@ proxies:
       headers:
         Host: idtj-herza.bonds.id
     udp: true
-  - name: ID 3
+  - name: IDFV2
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -164,7 +108,7 @@ proxies:
       headers:
         Host: idtj-herza.bonds.id
     udp: true
-  - name: ID 4
+  - name: IDFV3
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -176,20 +120,4 @@ proxies:
       path: /howdy
       headers:
         Host: idtj-herza.bonds.id
-    udp: true
-  - name: SG 10
-    server: 172.67.199.34
-    port: 80
-    type: vmess
-    uuid: a11d4420-7834-11ed-b535-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /fastssh
-      headers: 
-        Host: sg-ovh2.v2-ray.com
     udp: true
