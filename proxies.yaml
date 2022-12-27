@@ -1,21 +1,20 @@
 proxies:
-  - name: SGOV1
+  - name: SGFW1
     server: 172.67.199.34
     port: 443
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 16
+    type: vless
+    uuid: 81f1f510-3ca7-4734-8956-0f4fce670af5
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgv-5.openv2ray.com
+    servername: sg1.vless.co
     network: ws
     ws-opts: 
-      path: /opentunnel?user=opentunnel.net-monoll
+      path: /fastssh/oliip/63aa9adf87fe9/
       headers: 
-        Host: sgv-5.openv2ray.com
+        Host: sg1.vless.co
     udp: true
-  - name: SGOX2
+  - name: SGOW1
     server: 172.67.199.34
     port: 443
     type: vless
@@ -26,11 +25,11 @@ proxies:
     servername: sgx-3.openv2ray.com
     network: ws
     ws-opts: 
-      path: null
+      path: /u/opentunnel.net-pokolla
       headers: 
         Host: sgx-3.openv2ray.com
     udp: true
-  - name: SGFV1
+  - name: SGHT1
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -43,7 +42,7 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: SGFV2
+  - name: SGHT2
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -56,7 +55,7 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
     udp: true
-  - name: SGFV3
+  - name: SGHT3
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -69,7 +68,7 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
-  - name: SGFV4
+  - name: SGHT4
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -82,7 +81,7 @@ proxies:
       headers:
         Host: sg2-trojan.bonds.id
     udp: true
-  - name: IDFV1
+  - name: IDHT1
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -95,7 +94,7 @@ proxies:
       headers:
         Host: idtj-herza.bonds.id
     udp: true
-  - name: IDFV2
+  - name: IDHT2
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -108,7 +107,7 @@ proxies:
       headers:
         Host: idtj-herza.bonds.id
     udp: true
-  - name: IDFV3
+  - name: IDHT3
     server: 172.67.199.34
     port: 443
     type: trojan
