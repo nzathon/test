@@ -1,5 +1,5 @@
 proxies:
-  - name: sg
+  - name: SGF
     server: 15.235.163.44
     port: 443
     type: vmess
