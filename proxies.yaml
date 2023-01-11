@@ -1,4 +1,20 @@
 proxies:
+  - name: sg
+    server: 15.235.163.44
+    port: 443
+    type: vmess
+    uuid: 56228500-9205-11ed-b336-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: store.zoom.us
+    network: ws
+    ws-opts: 
+      path: /fastssh
+      headers: 
+        Host: store.zoom.us
+    udp: true
   - name: SGSW3
     server: 103.253.24.226
     port: 443
